@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap-lightbox.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        /*padding-top: 20px;*/
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+/*        margin: 60px 0;*/
+        text-align: center;
+        position: relative;
+      }
+
+      .jumbotron.image-bg::after {
+        content: '';  
+        background: url(./assets/img/falling-main-2.jpg) repeat center center;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+      .featurette{
+        text-align: center;
+      }
+
+      .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .header img {
+      width: 100%;
+      max-height: 300px;
+    }
+
+    .thumbnails img {
+      opacity: .7;
+    }
+    .modal-backdrop {
+      background-color: white;
+    }
+    .lightbox-content{
+      padding: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+    }
+
+    .muted2{opacity: .6;}
+    .muted3{opacity: .3;}
+
+/*  .row-fluid {
+    margin-top: -20px;
+  }*/
+
+    </style>
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="./assets/ico/favicon.png">
+  </head>
+
+  <body>
+  <div class="header"><img src="./assets/img/falling-main-banner.jpg" alt=""></div>
+
+   <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <!-- <li class="active"><a href="#">Games</a></li> -->
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="muted"><a href="/" class="muted">Tyson Kubota</a></h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+          <!-- <img src="./assets/img/falling-main.jpg" alt=""> -->
+        <h1>Falling<span class="muted">.</span><span class="muted muted2">.</span><span class="muted muted3">.</span></h1>
+        <p class="lead">A 3D falling game for iPhone, iPod touch, and iPad.</p>
+        <a class="btn btn-large btn-success" href="#">Download now<br><small class="dl-label"><strong>Free</strong> on the App Store</small></a>
+      </div>
+
+      <hr>
+
+      
+      <div class="jumbotron flex-video">
+<!--     <iframe width="100%" height="100%" src="http://www.youtube.com/embed/xX5V0LvQYsI?title=" frameborder="0" allowfullscreen></iframe> -->
+    <iframe id="ytplayer" type="text/html"
+src="https://www.youtube.com/embed/xX5V0LvQYsI?autohide=1&modestbranding=0&showinfo=0&theme=light"
+frameborder="0" allowfullscreen></iframe>
+
+      </div>
+        <p class="lead jumbotron">Trailer and screenshots</p>
+      <div class="row-fluid">
+            <ul class="thumbnails">
+               <li class="span2">
+                <a href="#demoLightbox" class="thumbnail" data-toggle="lightbox">
+                  <img src="./assets/img/falling-main-1-thumb.jpg">
+                </a>
+              </li>
+               <li class="span2">
+                <a href="#demoLightbox2" class="thumbnail" data-toggle="lightbox">
+                  <img src="./assets/img/falling-main-2.jpg">
+                </a>
+              </li>
+               <li class="span2">
+                <a href="#demoLightbox3" class="thumbnail" data-toggle="lightbox">
+                  <img src="./assets/img/falling-main-3.jpg">
+                </a>
+              </li>
+               <li class="span2">
+                <a href="#demoLightbox4" class="thumbnail" data-toggle="lightbox">
+                  <img src="./assets/img/falling-main-4.jpg">
+                </a>
+              </li>
+               <li class="span2">
+                <a href="#demoLightbox5" class="thumbnail" data-toggle="lightbox">
+                  <img src="./assets/img/falling-main-5.jpg">
+                </a>
+              </li> 
+               <li class="span2">
+                <a href="#demoLightbox6" class="thumbnail" data-toggle="lightbox">
+                  <img src="./assets/img/falling-main-6.jpg">
+                </a>
+              </li>
+            </ul>
+      </div>
+      <hr>
+
+
+<div class="featurette">
+<!--         <img class="featurette-image pull-right" src="./assets/img/examples/browser-icon-safari.png">
+ -->        <h2 class="featurette-heading">Smooth tilt control. <span class="muted">Polished 3D graphics.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+<!--       <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Smooth Tilt Control</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading 2</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading 3</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="span6">
+          <h4>Polished 3D graphics</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading 5</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading 6</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+      </div>
+         -->
+        <div class="jumbotron">
+        <a class="btn btn-large btn-success" href="#">Download now<br><small class="dl-label"><strong>Free</strong> for iPhone, iPod touch, and iPad</small></a>
+        </div>
+
+      <hr>
+
+      <div class="footer jumbotron">
+        <p>&copy; Tyson Kubota 2012</p>
+      </div>
+
+    </div> <!-- /container -->
+
+<!-- /Lightboxes -->
+<div id="demoLightbox" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class='lightbox-header'>
+        <button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
+    </div>
+    <div class='lightbox-content'>
+        <img src="./assets/img/falling-main-1.jpg">
+    </div>
+</div>
+
+<div id="demoLightbox2" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class='lightbox-content'>
+        <img src="./assets/img/falling-main-2.jpg">
+    </div>
+</div>
+<div id="demoLightbox3" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class='lightbox-content'>
+        <img src="./assets/img/falling-main-3.jpg">
+    </div>
+</div>
+<div id="demoLightbox4" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class='lightbox-content'>
+        <img src="./assets/img/falling-main-4.jpg">
+    </div>
+</div>
+<div id="demoLightbox5" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class='lightbox-content'>
+        <img src="./assets/img/falling-main-5.jpg">
+    </div>
+</div>
+<div id="demoLightbox6" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class='lightbox-content'>
+        <img src="./assets/img/falling-main-6.jpg">
+    </div>
+</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/bootstrap-lightbox.js"></script>
+  </body>
+</html>
