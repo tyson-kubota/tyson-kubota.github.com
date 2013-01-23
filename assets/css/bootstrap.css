@@ -210,7 +210,11 @@ body {
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
+  background-image: -moz-linear-gradient( top, rgba(50,50,50,0.12), rgba(255,255,255,0) 10em );
+  background-image: -webkit-linear-gradient( top, rgba(50,50,50,0.12), rgba(255,255,255,0) 10em );
+  background-repeat: repeat-x;
 }
+
 a {
   color: #0088cc;
   text-decoration: none;
