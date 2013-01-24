@@ -6146,3 +6146,15 @@ button.close {
   line-height: 1.5em;
   font-weight: 200;
 }
+
+.jumbotron h1 {
+  text-shadow: 1px 1px 3px gray;
+}
+
+/*h3.muted a {
+  color: white;
+}
+
+h3 a.muted {
+  text-shadow: 1px 1px 3px silver;
+}*/
