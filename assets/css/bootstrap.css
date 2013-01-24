@@ -6158,3 +6158,13 @@ button.close {
 h3 a.muted {
   text-shadow: 1px 1px 3px silver;
 }*/
+
+
+div.header {
+  max-height: 18.73em;
+  overflow: hidden;
+}
+
+.header img {
+  width: 100%;
+}
