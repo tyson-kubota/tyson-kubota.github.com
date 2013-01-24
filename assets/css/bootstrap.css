@@ -210,9 +210,6 @@ body {
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
-  background-image: -moz-linear-gradient( top, rgba(50,50,50,0.12), rgba(255,255,255,0) 10em );
-  background-image: -webkit-linear-gradient( top, rgba(50,50,50,0.12), rgba(255,255,255,0) 10em );
-  background-repeat: repeat-x;
 }
 
 a {
@@ -6167,4 +6164,12 @@ div.header {
 
 .header img {
   width: 100%;
+}
+
+
+body {
+  background-image: -moz-linear-gradient( top, rgba(50,50,50,0.12), rgba(255,255,255,0) 10em );
+  background-image: -webkit-linear-gradient( top, rgba(50,50,50,0.12), rgba(255,255,255,0) 10em );
+  background-repeat: repeat-x;
+  /*background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(255,255,255,.2)), color-stop(100%, rgba(50,50,50,.12)));*/
 }
