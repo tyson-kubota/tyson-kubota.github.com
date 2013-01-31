@@ -213,7 +213,7 @@ body {
 }
 
 a {
-  color: #0088cc;
+  color: #176A94;
   text-decoration: none;
 }
 a:hover {
@@ -3160,7 +3160,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: #ffffff;
-  background-color: #0088cc;
+  background-color: #176A94;
 }
 .nav-stacked > li {
   float: none;
