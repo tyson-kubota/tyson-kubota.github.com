@@ -11,6 +11,7 @@
     <!-- Le styles -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/bootstrap-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap-image-gallery.min.css">
     <style type="text/css">
       body {
         /*padding-top: 20px;*/
@@ -149,15 +150,15 @@
       <hr>
 
       
-      <div class="jumbotron flex-video">
-<!--     <iframe width="100%" height="100%" src="http://www.youtube.com/embed/xX5V0LvQYsI?title=" frameborder="0" allowfullscreen></iframe> -->
+<!--       <div class="jumbotron flex-video">
     <iframe id="ytplayer" type="text/html"
 src="https://www.youtube.com/embed/xX5V0LvQYsI?autohide=1&modestbranding=0&showinfo=0&theme=light"
 frameborder="0" allowfullscreen></iframe>
 
-      </div>
-        <p class="lead jumbotron">Trailer and screenshots</p>
-      <div class="row-fluid">
+      </div> -->
+
+        <p class="lead jumbotron">Screenshots</p>
+<!--       <div class="row-fluid">
             <ul class="thumbnails">
                <li class="span2">
                 <a href="#demoLightbox" class="thumbnail" data-toggle="lightbox">
@@ -190,9 +191,36 @@ frameborder="0" allowfullscreen></iframe>
                 </a>
               </li>
             </ul>
-      </div>
+      </div> -->
+
+     <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+
+        <div class="row-fluid">
+          <li class="span2"><a href="../assets/img/falling-main-1.jpg" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/falling-main-1.jpg"></a></li>
+          <li class="span2"><a href="../assets/img/falling-main-2.jpg" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/falling-main-2.jpg"></a></li>
+          <li class="span2"><a href="../assets/img/falling-main-3.jpg" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/falling-main-3.jpg"></a></li>
+          <li class="span2"><a href="../assets/img/falling-main-4.jpg" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/falling-main-4.jpg"></a></li>
+          <li class="span2"><a href="../assets/img/falling-main-5.jpg" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/falling-main-5.jpg"></a></li>
+          <li class="span2"><a href="../assets/img/falling-main-6.jpg" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/falling-main-6.jpg"></a></li>
+        </div>
+     </div>
+
+
       <hr>
 
+<div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+<!--     <div class="modal-header">
+        <a class="close" data-dismiss="modal">&times;</a>
+        <h3 class="modal-title"></h3>
+    </div> -->
+    <div class="modal-body"><div class="modal-image"></div></div>
+<!--     <div class="modal-footer">
+        <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
+        <a class="btn btn-info modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
+        <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
+        <a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>
+    </div> -->
+</div>
 
 <div class="featurette">
 <!--         <img class="featurette-image pull-right" src="./assets/img/examples/browser-icon-safari.png">
@@ -278,6 +306,8 @@ frameborder="0" allowfullscreen></iframe>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../assets/js/bootstrap.js"></script>
+    <script src="http://blueimp.github.com/JavaScript-Load-Image/load-image.min.js"></script>
+    <script src="../assets/js/bootstrap-image-gallery.min.js"></script>
     <script src="../assets/js/bootstrap-lightbox.js"></script>
   </body>
 </html>
