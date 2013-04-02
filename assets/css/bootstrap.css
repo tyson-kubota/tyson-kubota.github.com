@@ -6184,3 +6184,7 @@ div.row-fluid li p {
   padding: 10px;
   font-weight: 300;
 }
+
+div.footer {
+  color: lightgrey;
+}
