@@ -6179,3 +6179,8 @@ body {
 /* a {
   text-shadow: 0 .07em .2em silver;
 }*/
+
+div.row-fluid li p {
+  padding: 10px;
+  font-weight: 300;
+}
