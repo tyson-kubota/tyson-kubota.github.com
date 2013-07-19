@@ -1,0 +1,135 @@
+      body {
+        /*padding-top: 20px;*/
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 900px;
+        padding: 0 20px;
+        /*padding: 0 0;*/
+      }
+      
+      .container-narrow.narrower {
+        max-width: 700px;
+        /*margin: 0 auto;
+        padding: 0 0;*/
+      }
+
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+/*        margin: 60px 0;*/
+        text-align: center;
+        position: relative;
+      }
+
+      .jumbotron.image-bg::after {
+        content: '';  
+        background: url(./assets/img/falling-main-2.jpg) repeat center center;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+      .jumbotron h1 a {
+        color: #333333;
+      }
+      
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+      .featurette{
+        text-align: center;
+      }
+
+      .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .header img {
+      width: 100%;
+      max-height: 300px;
+    }
+
+    .thumbnails img {
+      opacity: .7;
+    }
+    .modal-backdrop {
+      background-color: white;
+    }
+    .lightbox-content{
+      padding: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+    }
+
+    .muted2{opacity: .6;}
+    .muted3{opacity: .3;}
+
+    img.my-portrait {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .masthead h3 {
+      font-size: 1.25em;
+      line-height: 2em;
+    }
+
+/*  .row-fluid {
+    margin-top: -20px;
+  }*/
+
+  @media (max-width: 767px) {
+      .container-narrow {
+        padding: 0 0;
+      } 
+
+}
+
+/*  @media (min-width: 768px) {
+
+      .jumbotron.falling-container {
+        overflow: hidden;
+      }
+
+      .jumbotron.falling-container img.falling {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        opacity: .25;
+      } 
+
+      .jumbotron.falling-container h1 {
+        padding-top: 1em;
+      }
+
+      .jumbotron.falling-container .btn.btn-large {
+        margin-bottom: 3em;
+      }
+  }*/

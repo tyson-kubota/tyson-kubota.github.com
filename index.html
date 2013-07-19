@@ -11,94 +11,7 @@
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-lightbox.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        /*padding-top: 20px;*/
-        padding-bottom: 40px;
-      }
-
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-
-      /* Main marketing message and sign up button */
-      .jumbotron {
-/*        margin: 60px 0;*/
-        text-align: center;
-        position: relative;
-      }
-
-      .jumbotron.image-bg::after {
-        content: '';  
-        background: url(./assets/img/falling-main-2.jpg) repeat center center;
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      }
-
-      .jumbotron h1 {
-        font-size: 72px;
-        line-height: 1;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-
-      .featurette{
-        text-align: center;
-      }
-
-      .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 500px;
-    }
-
-    .header img {
-      width: 100%;
-      max-height: 300px;
-    }
-
-    .thumbnails img {
-      opacity: .7;
-    }
-    .modal-backdrop {
-      background-color: white;
-    }
-    .lightbox-content{
-      padding: 0;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-    }
-
-    .muted2{opacity: .6;}
-    .muted3{opacity: .3;}
-
-/*  .row-fluid {
-    margin-top: -20px;
-  }*/
-
-    </style>
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./assets/css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -143,9 +56,9 @@
 
       <hr>
 
-      <div class="jumbotron">
-          <a href="./falling"><img src="./assets/img/falling-main.jpg" alt=""></a>
-        <h1>Falling<span class="muted">.</span><span class="muted muted2">.</span><span class="muted muted3">.</span></h1>
+      <div class="jumbotron falling-container">
+          <a href="./falling"><img src="./assets/img/falling-main.jpg" alt="" class="falling"></a>
+        <h1><a href="./falling">Falling</a><span class="muted">.</span><span class="muted muted2">.</span><span class="muted muted3">.</span></h1>
         <p class="lead">A 3D tilt game for iPhone, iPod touch, and iPad.</p>
         <a class="btn btn-large btn-success" href="./falling">Coming soon!<br></a>
       </div>
