@@ -77,8 +77,9 @@
     }
 
     .thumbnails img {
-      opacity: .7;
+      /*opacity: .7;*/
     }
+    
     .modal-backdrop {
       background-color: white;
     }
@@ -106,9 +107,28 @@
   }*/
 
   @media (max-width: 767px) {
+      
+      body {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
       .container-narrow {
         padding: 0 0;
       } 
+      
+      .container-narrow div:not(.row-fluid):not(.jumbotron), .container-narrow .featurette {
+        padding: 0 1em;
+      }
+
+      .jumbotron h1 {
+        font-size: 4em;
+        line-height: 1;
+      }
+
+      .jumbotron p {
+        padding: 0 1em;
+      }
 
 }
 
