@@ -38,6 +38,7 @@
         bottom: 0;
         left: 0;
       }
+
       .jumbotron h1 a {
         color: #333333;
       }
@@ -46,6 +47,7 @@
         font-size: 72px;
         line-height: 1;
       }
+
       .jumbotron .btn {
         font-size: 21px;
         padding: 14px 24px;
@@ -102,6 +104,14 @@
       line-height: 2em;
     }
 
+    .caption {
+      margin-top: 1em;
+    }
+
+    h1.falling-title {
+      margin-top: 1rem;
+    }
+
 /*  .row-fluid {
     margin-top: -20px;
   }*/
@@ -117,7 +127,8 @@
         padding: 0 0;
       } 
       
-      .container-narrow div:not(.row-fluid):not(.jumbotron), .container-narrow .featurette {
+      /*.container-narrow div:not(.row-fluid):not(.jumbotron), */
+      .container-narrow .featurette, .container-narrow .masthead, .container-narrow .bg {
         padding: 0 1em;
       }
 
@@ -128,6 +139,16 @@
 
       .jumbotron p {
         padding: 0 1em;
+      }
+
+      .text-success {
+        display: block;
+      }
+
+      .container-narrow > hr.nav {
+        margin-bottom: 20px;
+        margin-top: 0em;
+        width: 100%;
       }
 
 }
