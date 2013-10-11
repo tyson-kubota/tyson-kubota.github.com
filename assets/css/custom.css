@@ -118,6 +118,56 @@
     margin-top: -20px;
   }*/
 
+/*  .portfolio-slab .portfolio-contents {
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+  }
+
+  .portfolio-slab.closed .portfolio-contents {
+    display: none;
+    opacity: 0;
+  }
+
+  .portfolio-slab.open .portfolio-contents {
+    display: block;
+    opacity: 1;
+  }*/
+
+  .portfolio-slab {
+    padding: 2em 1em;
+  }
+
+  .portfolio-slab {
+    background-image: -webkit-linear-gradient( top, rgba(255,255,255,0),rgba(100,100,100,0.1) 150%);
+  }
+
+  .portfolio-slab.closed {
+    background-image: -webkit-linear-gradient( top, rgba(100,100,100,0.1), rgba(255,255,255,0) 150%);
+    /*background-image: -webkit-linear-gradient(top, rgba(100,100,100,0.1), rgba(255,255,255,0) 150%), url(../img/falling-main-2.jpg);*/
+  }
+
+  .portfolio-slab.open {
+/*    background-image: -webkit-linear-gradient( top, rgba(52,161,204,0.15), rgba(255,255,255,0) 100%);*/
+  }
+
+
+  /*.portfolio-slab.open {
+    animation: fadeInTile 12s;
+    -webkit-animation: fadeInTile 12s;
+  }
+
+  @keyframes fadeInTile {
+    from {background-color: rgba(0,0,0,1);
+    to {background-color: rgba(0,0,0,0);
+  }
+
+  @-webkit-keyframes fadeInTile {
+    0% {background-color: rgba(0,0,0,1);
+    100% {background-color: rgba(0,0,0,0);
+  }*/
+
+
+
   @media (max-width: 767px) {
       
       body {
@@ -152,6 +202,10 @@
         margin-top: 0em;
         width: 100%;
       }
+ 
+    .portfolio-slab {
+      padding: 1em .5em;
+    }      
 
 }
 
