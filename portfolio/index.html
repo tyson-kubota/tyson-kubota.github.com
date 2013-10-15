@@ -104,7 +104,7 @@
 </div>
       <!-- <hr> -->
 
-<div class="portfolio-slab closed pilobolus">
+<div class="portfolio-slab closed pilobolus" data-name="Pilobolus">
 
     <p class="lead jumbotron"><a href="http://www.pilobolusfilm.com"><strong>Still Moving: Pilobolus at Forty</strong></a></p>
         <p class="featurette">I designed and built this Tumblr-powered site for a <a href="http://www.pilobolusfilm.com">dance documentary</a> by Jeffrey Ruoff.</p>
@@ -125,7 +125,7 @@
 
      <!-- <hr> -->
 
-<div class="portfolio-slab closed road-eats">     
+<div class="portfolio-slab closed road-eats" data-name="Road-Eats">     
 
     <p class="lead jumbotron"><strong>“Road Eats” concept</strong></p>
         <p class="featurette">Desperate for food on a rural drive, I had an idea for a web app that would quickly show the best eating options along a transit route.</p>
@@ -146,7 +146,7 @@
 
      <!-- <hr> -->
 
-<div class="portfolio-slab closed falling">    
+<div class="portfolio-slab closed falling" data-name="Falling">    
     <p class="lead jumbotron"><a href="../falling"><strong>Falling...</strong></a></p>
         <p class="featurette">A 3D tilt game I’ve been creating for iOS using <a href="http://unity3d.com/">Unity.</a> I started it as a hobby in mid-2012. It’s been a crash course in game design and 3D modeling. What a great learning experience!</p>
 
@@ -173,10 +173,16 @@
 
      <!-- <hr> -->
 
-<div class="portfolio-slab closed gangnam">
+<div class="portfolio-slab closed gangnam" data-name="Gangnam">
 
   <p class="lead jumbotron"><a href="http://fuckyeahgangnamstyle.tumblr.com"><strong>Oppa Gangnam Style</strong></a></p>
         <p class="featurette">A <a href="http://fuckyeahgangnamstyle.tumblr.com">Tumblr of animated GIFs that I made.</a></p>
+
+    <div class="portfolio-contents">
+          <div class="row-fluid">
+            <a href="http://fuckyeahgangnamstyle.tumblr.com" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/portfolio/gangnam_500.gif"></a>
+          </div>
+    </div>
 
 </div>
   
@@ -250,7 +256,6 @@
     <script type="text/javascript">
       $(document).ready(function(){ 
         $(".closed.portfolio-slab").children(".portfolio-contents").hide();
-
         $(".portfolio-slab").not(".portfolio-contents").click(function(e) { 
 
 //          $(".portfolio-slab").live('click',function(e){
@@ -261,22 +266,31 @@
             }
 
            if ($(this).hasClass("closed")) {
-                e.preventDefault(); 
+                e.preventDefault();
+                var clicked = $(this);
+                PortfolioSlabOpenEvent(clicked);
                 //e.stopPropagation();
               }            
 
           //if (e.target !== this) return;
           if ($(this).hasClass("closed") || $(this).hasClass("open")) {
             $(this).toggleClass("closed");
-            $(this).toggleClass("open");
+            $(this).toggleClass("open");         
             // e.preventDefault(); 
             // e.stopPropagation();
             $(this).children(".portfolio-contents").fadeToggle("fast");
             };
+
+//            if ($(this).attr("name")) {PortfolioSlabOpenEvent();e.stopPropagation();}
+
             // $("#vault").fadeToggle("slow");
             // $(this).children(".triangle").toggleClass("down");
          });
 
+
+function PortfolioSlabOpenEvent(clicked) {
+        _gaq.push(['_trackEvent', 'Interaction', 'Portfolio slab click', clicked.data("name")]);
+}
       });
     </script>
   </body>
