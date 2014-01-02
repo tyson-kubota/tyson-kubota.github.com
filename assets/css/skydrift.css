@@ -1,0 +1,118 @@
+body {
+  background: url('../img/falling-background-translucent-2.png') no-repeat;
+  background-size: cover;
+}
+
+.skydrift-logotype {
+  letter-spacing: .75em;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: white;
+  font-weight: Helvetica;
+  margin: .25em;
+}
+
+.skydrift-logotype span {
+  text-shadow: 0px 0px 2px #797979;
+}
+
+.skydrift-logotype span:last-child {
+  letter-spacing: 0em;
+}
+
+.jumbotron.skydrift {
+  padding: 2em 0;
+  border-bottom: 1px solid grey;
+  margin-bottom: 1em;
+}
+
+.lead.skydrift {
+  color: #797979;
+}
+
+.skydrift-gallery .thumbnail {
+  padding: 0;
+}
+
+.skydrift-text-div {
+  /*border-top: 1px solid grey;
+  border-bottom: 1px solid grey;*/
+  margin: 2em 0;
+  padding: 2em 0;
+  /*color: #686868;*/
+  color: #797979;
+}
+
+.text-deeper {
+  color: #585858;
+  font-weight: 600;
+}
+
+.skydrift-text-div .lead {
+  font-size: 18px;
+}
+
+.skydrift-trans-bg {
+  background-color: rgba(255,255,255,.25);
+}
+
+.modal {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+.modal-body {
+  padding: 0px;
+}
+
+div.footer {
+  color: rgba(255,255,255,.7);
+}
+
+.app-store-btn {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.play-button-tri {
+
+  max-width: 100px;
+  max-height: 100px;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: absolute;
+  opacity: .75;
+
+  -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.95));
+  -moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.95));
+  -ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.95));
+  -o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.95));
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.95));
+
+}
+
+@media (max-width: 767px) {
+  .skydrift-gallery .thumbnail {
+    width: 50%;
+    float: left;
+  }
+
+  .skydrift-gallery .span3 {
+    display: inline;
+  }
+}
+
+@media only screen and (max-device-width: 480px), (max-width: 468px) {
+  .play-button-tri {
+  max-width: 70px;
+  max-height: 70px;
+  left: 50%;
+  top: 50%;
+  margin-left: -35px;
+  margin-top: -35px;
+  }
+}
