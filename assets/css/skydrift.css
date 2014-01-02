@@ -9,10 +9,11 @@ body.skydrift {
   padding: 4em 0;
 }
 
-.jumbotron.skydrift-container .lead.skydrift {
+.jumbotron.skydrift-container .lead.skydrift a {
   color: white;
   text-shadow: 0px 0px 2px #282828;
   opacity: .75;
+  text-decoration: none;
 }
 
 .jumbotron.skydrift-container .bg {
