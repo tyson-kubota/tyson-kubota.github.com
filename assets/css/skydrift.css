@@ -55,6 +55,17 @@ a.skydrift-tile-link {
   color: #797979;
 }
 
+.skydrift-centered {
+  text-align: center;
+  position: relative;
+  margin: 2em 0 1em;
+}
+
+a.skydrift-contact.btn {
+  color: #797979;
+  /*font-size: 18px;*/
+}
+
 .skydrift-gallery .thumbnail {
   padding: 0;
 }
