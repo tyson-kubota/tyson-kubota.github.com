@@ -114,6 +114,10 @@
       margin-top: 1rem;
     }
 
+    .lead {
+      font-weight: 300;
+    }
+
 /*  .row-fluid {
     margin-top: -20px;
   }*/
