@@ -46,6 +46,21 @@
 
 </script>
 
+<script type="text/javascript">
+
+function trackOutboundLink(link, category, action, label) { 
+ 
+  try { 
+  _gaq.push(['_trackEvent', category , action , label]); 
+  } catch(err){}
+   
+  setTimeout(function() {
+  document.location.href = link.href;
+  }, 100);
+}
+
+</script>
+
   </head>
 
   <body class="skydrift">
@@ -128,9 +143,9 @@
             Enjoy smooth tilt controls and polished 3D graphics across four detailed levels.
           </p>
 
-          <p class="lead">
+<!--           <p class="lead">
             <span class="text-deeper">Coming soon.</span>
-          </p>
+          </p> -->
         </div>
 
 
@@ -144,9 +159,10 @@
           <small class="dl-label"> for iPhone, iPod touch, and iPad</small>
         </a> -->
 
-<!--         <a class="app-store-btn" href="http://appstore.com/skydrift">
+        <a class="app-store-btn" href="http://appstore.com/skydrift" id="app-store-link">
           <img src="../assets/img/skydrift/app-store-badge-alpha.png">
-        </a> -->
+          <small class="skydrift-caption"><strong>Free</strong> for iPhone and iPad</small>
+        </a>
 
         </div>
 
@@ -209,6 +225,11 @@
         });
             // console.log("Time to play!");
             });
+      });
+
+      $("#app-store-link").click(function(e) {
+        e.preventDefault();
+        trackOutboundLink(this, 'Interaction', 'App Store Button Click', "Skydrift");
       });
     });
 

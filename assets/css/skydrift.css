@@ -60,6 +60,17 @@ a.skydrift-tile-link {
   margin: 2em 0 1em;
 }
 
+.skydrift-caption {
+  font-size: 13px;
+  margin: .5em 0;
+  color: #585858;
+  display: block;
+}
+
+a:hover .skydrift-caption {
+  color: #282828;
+}
+
 a.skydrift-contact.btn {
   color: #797979;
   /*font-size: 18px;*/

@@ -118,6 +118,10 @@
       font-weight: 300;
     }
 
+    a:hover {
+      text-decoration: none;
+    }
+
 /*  .row-fluid {
     margin-top: -20px;
   }*/
