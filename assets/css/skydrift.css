@@ -57,7 +57,7 @@ a.skydrift-tile-link {
 .skydrift-centered {
   text-align: center;
   position: relative;
-  margin: 2em 0 1em;
+  margin: .5em 0;
 }
 
 .skydrift-caption {
@@ -71,8 +71,9 @@ a:hover .skydrift-caption {
   color: #282828;
 }
 
-a.skydrift-contact.btn {
-  color: #797979;
+a.skydrift-contact {
+  color: white;
+  font-weight: 500;
   /*font-size: 18px;*/
 }
 
@@ -83,7 +84,9 @@ a.skydrift-contact.btn {
 .skydrift-text-div {
   /*border-top: 1px solid grey;
   border-bottom: 1px solid grey;*/
-  margin: 2em 0;
+  /*margin: 2em 0;*/
+  /*margin: .5em 0 2em 0;*/
+  margin: 1.25em 0 .5em 0;
   padding: 2em 0;
   /*color: #686868;*/
   color: #797979;
@@ -100,6 +103,23 @@ a.skydrift-contact.btn {
 
 .skydrift-trans-bg {
   background-color: rgba(255,255,255,.25);
+}
+
+.reviews-block-container {
+  /*margin: 1.25em 0 .5em 0;*/
+  margin: .5em 0 2em 0;
+  padding: 0 .5em;
+}
+
+.reviews-block {
+  padding: 1rem;
+  /*opacity: .75;*/
+  font-weight: 200;
+}
+
+.reviews-block a {
+  color: #585858;
+  font-weight: 400;
 }
 
 .modal {
