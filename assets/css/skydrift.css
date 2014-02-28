@@ -102,8 +102,14 @@ a.skydrift-contact {
 }
 
 .skydrift-trans-bg {
+  /*background-color: rgba(255,255,255,.4);*/
   background-color: rgba(255,255,255,.25);
 }
+
+.skydrift-trans-bg-quarter {
+  background-color: rgba(255,255,255,.25);
+}
+
 
 .reviews-block-container {
   /*margin: 1.25em 0 .5em 0;*/
@@ -114,12 +120,16 @@ a.skydrift-contact {
 .reviews-block {
   padding: 1rem;
   /*opacity: .75;*/
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .reviews-block a {
   color: #585858;
   font-weight: 400;
+}
+
+.reviews-block p {
+  color: #585858;
 }
 
 .modal {
