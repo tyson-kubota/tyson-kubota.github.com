@@ -154,12 +154,33 @@
     /*background-image: -webkit-linear-gradient(top, rgba(100,100,100,0.1), rgba(255,255,255,0) 150%), url(../img/falling-main-2.jpg);*/
   }
 
+  .portfolio-slab.closed.criterion {
+    /*background-image: url('../img/portfolio/zatoichi-900.jpg');*/
+    /*color: white;*/
+    background-image: -webkit-linear-gradient( top, rgba(100,100,100,0.1), rgba(255,255,255,0) 150%);
+  }
+  /*.portfolio-slab.closed.criterion p.lead.jumbotron a {color: white;}*/
+
   .portfolio-slab.open {
 /*    background-image: -webkit-linear-gradient( top, rgba(52,161,204,0.15), rgba(255,255,255,0) 100%);*/
   }
   .portfolio-slab.closed p.lead.jumbotron a{
     color: #333333;
   }
+
+  .portfolio-slab.closed::after {
+    content: '+';
+    margin: .5em auto .25em auto;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    opacity: .1;
+  }  
+
+  .portfolio-slab.closed:hover::after {
+    opacity: .4;
+  }  
 
   /*.portfolio-slab.open {
     animation: fadeInTile 12s;
