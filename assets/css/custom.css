@@ -157,7 +157,9 @@
   .portfolio-slab.open {
 /*    background-image: -webkit-linear-gradient( top, rgba(52,161,204,0.15), rgba(255,255,255,0) 100%);*/
   }
-
+  .portfolio-slab.closed p.lead.jumbotron a{
+    color: #333333;
+  }
 
   /*.portfolio-slab.open {
     animation: fadeInTile 12s;
