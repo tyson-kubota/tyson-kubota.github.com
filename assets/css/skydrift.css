@@ -2,6 +2,7 @@ body.skydrift {
   background: url('../img/falling-background-translucent-2.png') no-repeat;
   background-size: cover;
   padding-bottom: 1.5em;
+  opacity: 0;
 }
 
 .jumbotron.skydrift-container {

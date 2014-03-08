@@ -45,10 +45,6 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
-
-<script type="text/javascript">
-
 function trackOutboundLink(link, category, action, label) { 
  
   try { 
@@ -160,21 +156,21 @@ function trackOutboundLink(link, category, action, label) {
     <div class="span4 reviews-block">
             <div class="">
               <p>“One of the strangest and most beautiful mobile games I’ve played in a while.”</p>
-                —<a href="http://toucharcade.com/2014/02/13/skydrift-review/">Touch Arcade</a>
+                —<a href="http://toucharcade.com/2014/02/13/skydrift-review/" data-linkname="Touch Arcade" class="outbound">Touch Arcade</a>
             </div>
     </div>
 
     <div class="span4 reviews-block">
             <div class="">
                 <p>“Beautiful, with an ever-changing feel. At times, it feels like you’re falling through the remnants of a long-forgotten advanced civilization.”</p>
-                —<a href="http://www.avclub.com/article/sawbuck-gamer-jan-23-2014-107212">The A.V. Club</a>
+                —<a href="http://www.avclub.com/article/sawbuck-gamer-jan-23-2014-107212" data-linkname="AV Club" class="outbound">The A.V. Club</a>
             </div>
     </div>
 
     <div class="span4 reviews-block">
             <div class="">
               <p>“The graphics are other-worldly and smooth… After a few minutes, I was hooked, trying to go deeper and deeper."</p>
-              —<a href="http://www.tuaw.com/2014/01/10/skydrift-challenges-you-to-avoid-collisions-and-stay-alive-while/">TUAW</a>
+              —<a href="http://www.tuaw.com/2014/01/10/skydrift-challenges-you-to-avoid-collisions-and-stay-alive-while/" data-linkname="TUAW" class="outbound">TUAW</a>
             </div>
     </div>
   </div>
@@ -217,7 +213,8 @@ function trackOutboundLink(link, category, action, label) {
 
     <script type="text/javascript">
     $(document).ready(function(){ 
-
+      //$("body.skydrift").delay(1000).animate({ opacity: 1 }, 700);​
+      $("body.skydrift").delay(300).animate({opacity: 1}, 900);
       $(".video-frame").click(function(e) { 
           e.preventDefault(); 
           TrailerClickEvent();
@@ -243,6 +240,13 @@ function trackOutboundLink(link, category, action, label) {
         e.preventDefault();
         trackOutboundLink(this, 'Interaction', 'App Store Button Click', "Skydrift");
       });
+      
+      $("a.outbound").click(function(e) {
+        e.preventDefault();
+        trackOutboundLink(this, 'Interaction', 'Outbound Link Click', $(this).text());
+      });
+
+
     });
 
     function TrailerClickEvent() {
