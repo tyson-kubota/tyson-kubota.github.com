@@ -154,6 +154,11 @@
     /*background-image: -webkit-linear-gradient(top, rgba(100,100,100,0.1), rgba(255,255,255,0) 150%), url(../img/falling-main-2.jpg);*/
   }
 
+  .portfolio-slab.closed:hover {
+    background-image: -webkit-linear-gradient( top, rgba(100,100,100,0.1), rgba(100,100,100,0.2) 150%);
+    /*background-image: -webkit-linear-gradient(top, rgba(100,100,100,0.1), rgba(255,255,255,0) 150%), url(../img/falling-main-2.jpg);*/
+  }
+
   .portfolio-slab.closed.criterion {
     /*background-image: url('../img/portfolio/zatoichi-900.jpg');*/
     /*color: white;*/
@@ -176,10 +181,14 @@
     display: block;
     font-size: 2em;
     opacity: .1;
+    transition: all .5s;
+    -webkit-transition: all .5s;
   }  
 
   .portfolio-slab.closed:hover::after {
-    opacity: .4;
+    opacity: .75;
+    transition: opacity .2s;
+    -webkit-transition: opacity .2s;    
   }  
 
   /*.portfolio-slab.open {
