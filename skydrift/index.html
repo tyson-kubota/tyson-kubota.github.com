@@ -219,7 +219,7 @@ function trackOutboundLink(link, category, action, label) {
           TrailerClickEvent();
           $(this).fadeToggle("slow");
 
-          $('#myPlayer1').html('<iframe id="trailerYt" width="100%" height="372" src="http://www.youtube.com/embed/jS1yCWyyzbc?rel=0&autohide=1&modestbranding=1&enablejsapi=1&origin=*&autoplay=1&showinfo=0&theme=light" frameborder="0" allowfullscreen="">').promise().done(function(){
+          $('#myPlayer1').html('<iframe id="trailerYt" width="100%" height="372" src="http://www.youtube.com/embed/jS1yCWyyzbc?rel=0&modestbranding=1&enablejsapi=1&origin=*&autoplay=1&showinfo=0&theme=light" frameborder="0" allowfullscreen="">').promise().done(function(){
 
           //need autoplay, enablejsapi and origin wildcard URL params above to ensure YouTube permits play-on-load
           //http://stackoverflow.com/questions/7443578/youtube-iframe-api-how-do-i-control-a-iframe-player-thats-already-in-the-html/7513356#7513356
