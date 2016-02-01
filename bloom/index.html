@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Bloom</title>
+    <title>Bloom | Global Game Jam 2016</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <script src="TemplateData/UnityProgress.js"></script>
@@ -15,19 +15,32 @@
       <br>
       <div class="logo"></div>
       <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">Bloom</div>
+      <div class="title"><b>BLOOM</b>, made for the 2016 Global Game Jam
+        <a href="http://globalgamejam.org/2016/games/bloom" style="text-decoration: none; font-weight: bold; color: #1EAED3">&nbsp;&nbsp;More info »</a>
+      </div>
     </div>
     <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
     <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    dataUrl: "Release/Beat.data",
-    codeUrl: "Release/Beat.js",
-    memUrl: "Release/Beat.mem",
-  };
-</script>
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38081308-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+      var Module = {
+        TOTAL_MEMORY: 268435456,
+        errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+        compatibilitycheck: null,
+        dataUrl: "Release/Beat.data",
+        codeUrl: "Release/Beat.js",
+        memUrl: "Release/Beat.mem",
+      };
+    </script>
 <script src="Release/UnityLoader.js"></script>
 
   </body>
