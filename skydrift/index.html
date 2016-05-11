@@ -45,16 +45,16 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-function trackOutboundLink(link, category, action, label) { 
- 
-  try { 
-  _gaq.push(['_trackEvent', category , action , label]); 
-  } catch(err){}
+  function trackOutboundLink(link, category, action, label) { 
    
-  setTimeout(function() {
-  document.location.href = link.href;
-  }, 100);
-}
+    try { 
+    _gaq.push(['_trackEvent', category , action , label]); 
+    } catch(err){}
+     
+    setTimeout(function() {
+    document.location.href = link.href;
+    }, 100);
+  }
 
 </script>
 
@@ -71,7 +71,7 @@ function trackOutboundLink(link, category, action, label) {
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <!-- <li class="active"><a href="#">Games</a></li> -->
-          <li><a href="../index.html">Home</a></li>
+          <li><a href="../">Home</a></li>
           <li><a href="../contact">Contact</a></li>
         </ul>
         <h3 class="muted"><a href="../" class="muted">Tyson Kubota</a></h3>
@@ -180,7 +180,7 @@ function trackOutboundLink(link, category, action, label) {
 
 
       <div class="footer jumbotron">
-        <p>&copy; <a class="skydrift-contact" href="mailto:tyson.kubota.web@gmail.com">Tyson Kubota</a> 2015</p>
+        <p>&copy; <a class="skydrift-contact" href="mailto:tyson.kubota.web@gmail.com">Tyson Kubota</a> 2016</p>
       </div>
 
     </div> <!-- /container -->
