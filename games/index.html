@@ -40,24 +40,24 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-  
-  function trackGameLink(link, category, action, label) { 
-   
-    try { 
-    _gaq.push(['_trackEvent', category , action , label]); 
+
+  function trackGameLink(link, category, action, label) {
+
+    try {
+    _gaq.push(['_trackEvent', category , action , label]);
     } catch(err){}
-     
+
     setTimeout(function() {
     document.location.href = link.href;
     }, 100);
   }
 
-  function trackOutboundLink(link, category, action, label) { 
-   
-    try { 
-    _gaq.push(['_trackEvent', category , action , label]); 
+  function trackOutboundLink(link, category, action, label) {
+
+    try {
+    _gaq.push(['_trackEvent', category , action , label]);
     } catch(err){}
-     
+
     setTimeout(function() {
     document.location.href = link.href;
     }, 100);
@@ -113,7 +113,7 @@
 <div class="portfolio-slab open the-seed" data-name="The Seed">
 
     <p class="lead jumbotron"><strong>The Seed for Oculus Rift</strong></a></p>
-        <p class="featurette">I designed and built <strong>The Seed</strong> with some friends for the first Oculus Rift Game Jam, in summer 2013.</p> 
+        <p class="featurette">I designed and built <strong>The Seed</strong> with some friends for the first Oculus Rift Game Jam, in summer 2013.</p>
         <p class="featurette">It’s a self-guided interactive experience through a fog-shrouded landscape that responds to where you look and how you move through the world, with procedural elements and binaural audio.</p>
         <br>
     <div class="portfolio-contents">
@@ -159,7 +159,7 @@
 </div>
 
       <div class="footer jumbotron">
-        <p>&copy; Tyson Kubota 2016</p>
+        <p>&copy; Tyson Kubota 2017</p>
       </div>
 
     </div>
