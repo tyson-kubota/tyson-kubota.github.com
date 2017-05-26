@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap-image-gallery.min.css">
     <link href="../assets/css/custom.css" rel="stylesheet">
     <link href="../assets/css/skydrift.css" rel="stylesheet">
-    
+
     <!-- <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
     <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> -->
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -32,7 +32,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../assets/ico/apple-touch-icon-76x76.png">
     <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../assets/ico/apple-touch-icon-60x60.png">
     <link rel="shortcut icon" href="../assets/ico/skydrift-favicon.ico">
-  
+
   <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -45,12 +45,12 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-  function trackOutboundLink(link, category, action, label) { 
-   
-    try { 
-    _gaq.push(['_trackEvent', category , action , label]); 
+  function trackOutboundLink(link, category, action, label) {
+
+    try {
+    _gaq.push(['_trackEvent', category , action , label]);
     } catch(err){}
-     
+
     setTimeout(function() {
     document.location.href = link.href;
     }, 100);
@@ -84,7 +84,7 @@
         <p class="lead skydrift">A game for iPhone and iPad</p>
 
       </div>
-      
+
       <div class="jumbotron skydrift-gallery">
         <div class="row-fluid">
 
@@ -101,13 +101,13 @@
           </div>
 
       </div>
-      
+
      <div id="gallery" class="skydrift-gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
         <div class="row-fluid">
           <li class="span3"><a href="../assets/img/skydrift/skydrift-16x9-1b.jpg" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/skydrift/skydrift-16x9-1b.jpg"></a></li>
           <li class="span3"><a href="../assets/img/skydrift/skydrift-16x9-2b.jpg" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/skydrift/skydrift-16x9-2b.jpg"></a></li>
           <li class="span3"><a href="../assets/img/skydrift/skydrift-16x9-3b.jpg" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/skydrift/skydrift-16x9-3b.jpg"></a></li>
-          <li class="span3"><a href="../assets/img/skydrift/skydrift-16x9-4b.jpg" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/skydrift/skydrift-16x9-4b.jpg"></a></li>          
+          <li class="span3"><a href="../assets/img/skydrift/skydrift-16x9-4b.jpg" class="thumbnail" title="" data-gallery="gallery"><img src="../assets/img/skydrift/skydrift-16x9-4b.jpg"></a></li>
         </div>
      </div>
 
@@ -129,9 +129,9 @@
         <div class="featurette">
 
           <p class="lead">
-            <span class="text-deeper">Tilt to move in midair. Tap the screen to speed up.</span> 
+            <span class="text-deeper">Tilt to move in midair. Tap the screen to speed up.</span>
             <br>
-            Try to stay alive as you fall from the heavens down to the earth's core. 
+            Try to stay alive as you fall from the heavens down to the earth's core.
             <br>
             Enjoy smooth tilt controls and polished 3D graphics across four detailed levels.
           </p>
@@ -147,7 +147,7 @@
         </a>
 
         </div>
-   
+
 </div>
 
 <div class="skydrift-text-div skydrift-trans-bg-quarter reviews-block-container">
@@ -180,7 +180,7 @@
 
 
       <div class="footer jumbotron">
-        <p>&copy; <a class="skydrift-contact" href="mailto:tyson.kubota.web@gmail.com">Tyson Kubota</a> 2016</p>
+        <p>&copy; <a class="skydrift-contact" href="mailto:tyson.kubota.web@gmail.com">Tyson Kubota</a> 2017</p>
       </div>
 
     </div> <!-- /container -->
@@ -197,7 +197,7 @@
     <script src="../assets/js/bootstrap.js"></script>
     <script src="../assets/js/load-image.js"></script>
     <script src="../assets/js/play-youtube.js"></script>
-    
+
     <script src="../assets/js/bootstrap-image-gallery.js"></script>
     <!--<script src="../assets/js/bootstrap-lightbox.js"></script>-->
 
@@ -212,10 +212,10 @@
     </script>
 
     <script type="text/javascript">
-    $(document).ready(function(){ 
+    $(document).ready(function(){
       //$("body.skydrift").delay(100).animate({opacity: 1}, 800, "swing");
-      $(".video-frame").click(function(e) { 
-          e.preventDefault(); 
+      $(".video-frame").click(function(e) {
+          e.preventDefault();
           TrailerClickEvent();
           $(this).fadeToggle("slow");
 
@@ -223,9 +223,9 @@
 
           //need autoplay, enablejsapi and origin wildcard URL params above to ensure YouTube permits play-on-load
           //http://stackoverflow.com/questions/7443578/youtube-iframe-api-how-do-i-control-a-iframe-player-thats-already-in-the-html/7513356#7513356
-          
+
           //Need to use the callback below to ensure the player is ready, instead of calling PlayVideo directly.
-          
+
               callPlayer("trailerYt", function() {
             // This function runs once the player is ready ("onYouTubePlayerReady")
             if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {return;}
@@ -239,7 +239,7 @@
         e.preventDefault();
         trackOutboundLink(this, 'Interaction', 'App Store Button Click', "Skydrift");
       });
-      
+
       $("a.outbound").click(function(e) {
         e.preventDefault();
         trackOutboundLink(this, 'Interaction', 'Outbound Link Click', $(this).text());
